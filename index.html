@@ -10,8 +10,7 @@
     <title>Viajes Air Plane - Inicio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -26,7 +25,7 @@
 
             <div class="flex items-center">
                 <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium text-blue-600 font-semibold nav-active">Inicio</a>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium text-blue-600 font-semibold">Inicio</a>
                     <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
                     <a href="destinos.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Destinos</a>
                     <a href="servicios.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
@@ -74,10 +73,10 @@
     </header>
 
     <main>
-        <section class="hero-section relative bg-cover bg-center text-white py-32 md:py-48" style="background-image: url('img/Cuesta\ del\ Portezuelo.webp');">
+        <section class="hero-section relative bg-cover bg-center text-white py-32 md:py-48" style="background-image: url('img/Cuesta-del-Portezuelo.webp');">
             <div class="hero-content container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Descubre Tu Próxima Aventura</h1>
-                <p class="text-lg md:text-2xl mb-8 text-gray-200">Explora los destinos más fascinantes del mundo con Viajes Increíbles. Hacemos tus sueños realidad.</p>
+                <p class="text-lg md:text-2xl mb-8 text-gray-200">Explora los destinos más fascinantes del mundo con Viajes Air Plane. Hacemos tus sueños realidad.</p>
                 <a href="destinos.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg transform hover:scale-105 transition">
                     Reserva Ahora
                 </a>
@@ -118,14 +117,14 @@
 
         <section class="py-16 bg-gray-100">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lo Que Dicen Nuestros Viajeros</h2>
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestros Viajeros</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <article class="bg-white p-6 rounded-lg shadow-md">
-                        <q class="text-gray-600 italic">Viajes Increíbles organizó el mejor viaje de mi vida. Todo fue perfecto, desde los vuelos hasta los hoteles. ¡Altamente recomendado!</q>
+                        <q class="text-gray-600 italic">Viajes Air Plane organizó el mejor viaje de mi vida. Todo fue perfecto, desde los vuelos hasta los hoteles. ¡Altamente recomendado!</q>
                         <cite class="block text-right mt-4 text-gray-800 font-semibold">- Ana Pérez</cite>
                     </article>
                     <article class="bg-white p-6 rounded-lg shadow-md">
-                        <q class="text-gray-600 italic">La atención al detalle y el soporte constante hicieron de nuestras vacaciones una experiencia inolvidable. Gracias Viajes Increíbles.</q>
+                        <q class="text-gray-600 italic">La atención al detalle y el soporte constante hicieron de nuestras vacaciones una experiencia inolvidable. Gracias Viajes Air Plane.</q>
                         <cite class="block text-right mt-4 text-gray-800 font-semibold">- Carlos Gómez</cite>
                     </article>
                 </div>
@@ -159,26 +158,6 @@
         </div>
     </footer>
 
-    <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const pageBody = document.body;
 
-        if (menuButton && mobileMenu) {
-            menuButton.addEventListener('click', () => {
-                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
-                menuButton.setAttribute('aria-expanded', !isExpanded);
-                mobileMenu.classList.toggle('hidden');
-                
-                if (!mobileMenu.classList.contains('hidden')) {
-                    menuButton.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`; // Ícono X
-                    pageBody.style.overflow = 'hidden'; 
-                } else {
-                    menuButton.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>`; // Ícono Hamburguesa
-                    pageBody.style.overflow = ''; 
-                }
-            });
-        }
-    </script>
 </body>
 </html>

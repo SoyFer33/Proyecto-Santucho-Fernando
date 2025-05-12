@@ -15,60 +15,66 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
-    <script src="js/main.js" defer></script>
+    
 </head>
 <body class="bg-gray-100 text-gray-800">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700">Viajes Air Plane</a>
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">Viajes Air Plane</a>
 
-            <div class="flex items-center">
-                <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium text-blue-600 font-semibold">Inicio</a>
-                    <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
-                    <a href="destinos.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Destinos</a>
-                    <a href="servicios.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
-                    <a href="contacto.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
-                </div>
-
+            <nav class="hidden md:flex space-x-1 lg:space-x-2 items-center">
+                <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 nav-active-custom">Inicio</a>
+                <a href="nosotros.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Nosotros</a>
+                <a href="destinos.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Destinos</a>
+                <a href="servicios.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Servicios</a>
+                <a href="contacto.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Contacto</a>
                 <div class="hidden md:flex items-center space-x-3 ml-4">
                     <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-700 transition-colors duration-200">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                     </a>
-                    <a href="#" aria-label="Instagram" class="text-gray-500 hover:text-pink-600 transition-colors duration-200">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.74 2 8.333.015 6.85.07 5.367.124 4.312.327 3.466.668c-.851.344-1.564.795-2.257 1.488C.518 2.85.067 3.563.028 4.312c-.341.846-.544 1.9-.6 3.383C-.015 8.333 0 8.74 0 12s.015 3.667.07 5.15c.056 1.483.259 2.538.6 3.383.341.851.792 1.564 1.485 2.257.697.693 1.406 1.144 2.257 1.485.846.341 1.9.544 3.383.6 1.483.056 1.89.07 5.15.07s3.667-.015 5.15-.07c1.483-.056 2.538-.259 3.383-.6.851-.341 1.564-.792 2.257-1.485.693-.697 1.144-1.406 1.485-2.257.341-.846.544-1.9.6-3.383.056-1.483.07-1.89.07-5.15s-.015-3.667-.07-5.15c-.056-1.483-.259-2.538-.6-3.383-.341-.851-.792-1.564-1.485-2.257C21.15.518 20.437.067 19.688.028c-.846-.341-1.9-.544-3.383-.6C14.667-.015 14.26 0 12 0zm0 2.16c2.074 0 2.445.009 3.305.048.836.038 1.352.182 1.67.303.415.16.704.368.98.643.276.276.483.565.643.98.121.318.265.834.303 1.67.039.86.048 1.231.048 3.305s-.009 2.445-.048 3.305c-.038.836-.182 1.352-.303 1.67-.16.415-.368.704-.643.98-.276.276-.565.483-.98-.643-.318.121-.834.265-1.67.303-.86.039-1.231-.048-3.305.048s-2.445-.009-3.305-.048c-.836-.038-1.352-.182-1.67-.303-.415-.16-.704.368-.98-.643-.276-.276-.483.565-.643.98-.121-.318-.265.834-.303 1.67-.039-.86-.048-1.231-.048-3.305s.009-2.445.048-3.305c.038-.836.182 1.352.303 1.67.16-.415.368.704.643.98.276-.276.565.483.98-.643.318-.121.834.265 1.67-.303.86-.039 1.231-.048 3.305-.048zM12 6.873c-2.846 0-5.157 2.31-5.157 5.157s2.311 5.157 5.157 5.157 5.157-2.31 5.157-5.157S14.846 6.873 12 6.873zm0 8.414c-1.799 0-3.257-1.458-3.257-3.257s1.458-3.257 3.257-3.257 3.257 1.458 3.257 3.257-1.458 3.257-3.257 3.257zm4.965-6.797a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" clip-rule="evenodd" /></svg>
-                    </a>
-                    <a href="#" aria-label="Twitter / X" class="text-gray-500 hover:text-sky-500 transition-colors duration-200">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
+                    
                 </div>
-            </div>
+            </nav>
 
-            <div class="md:hidden flex items-center">
-                <div class="flex space-x-3 mr-3">
-                    <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-700">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                    </a>
-                    <a href="#" aria-label="Instagram" class="text-gray-500 hover:text-pink-600">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C8.74 2 8.333.015 6.85.07 5.367.124 4.312.327 3.466.668c-.851.344-1.564.795-2.257 1.488C.518 2.85.067 3.563.028 4.312c-.341.846-.544 1.9-.6 3.383C-.015 8.333 0 8.74 0 12s.015 3.667.07 5.15c.056 1.483.259 2.538.6 3.383.341.851.792 1.564 1.485 2.257.697.693 1.406 1.144 2.257 1.485.846.341 1.9.544 3.383.6 1.483.056 1.89.07 5.15.07s3.667-.015 5.15-.07c1.483-.056 2.538-.259 3.383-.6.851-.341 1.564-.792 2.257-1.485.693-.697 1.144-1.406 1.485-2.257.341-.846.544-1.9.6-3.383.056-1.483.07-1.89.07-5.15s-.015-3.667-.07-5.15c-.056-1.483-.259-2.538-.6-3.383-.341-.851-.792-1.564-1.485-2.257C21.15.518 20.437.067 19.688.028c-.846-.341-1.9-.544-3.383-.6C14.667-.015 14.26 0 12 0zm0 2.16c2.074 0 2.445.009 3.305.048.836.038 1.352.182 1.67.303.415.16.704.368.98.643.276.276.483.565.643.98.121.318.265.834.303 1.67.039.86.048 1.231.048 3.305s-.009 2.445-.048 3.305c-.038.836-.182 1.352-.303 1.67-.16.415-.368.704-.643.98-.276.276-.565.483-.98-.643-.318.121-.834.265-1.67.303-.86.039-1.231-.048-3.305.048s-2.445-.009-3.305-.048c-.836-.038-1.352.182-1.67-.303-.415-.16-.704.368-.98-.643-.276-.276-.483.565-.643.98-.121-.318-.265.834-.303 1.67-.039-.86-.048-1.231-.048-3.305s.009-2.445.048-3.305c.038-.836.182 1.352.303 1.67.16-.415.368.704.643.98.276-.276.565.483.98-.643.318-.121.834.265 1.67-.303.86-.039 1.231-.048 3.305-.048zM12 6.873c-2.846 0-5.157 2.31-5.157 5.157s2.311 5.157 5.157 5.157 5.157-2.31 5.157-5.157S14.846 6.873 12 6.873zm0 8.414c-1.799 0-3.257-1.458-3.257-3.257s1.458-3.257 3.257-3.257 3.257 1.458 3.257 3.257-1.458 3.257-3.257 3.257zm4.965-6.797a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" clip-rule="evenodd" /></svg>
-                    </a>
-                    <a href="#" aria-label="Twitter / X" class="text-gray-500 hover:text-sky-500">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
+            <div class="md:hidden">
+                <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
+                
+                <label for="mobile-menu-toggle" 
+                       class="z-30 relative p-2 cursor-pointer block
+                              peer-checked:[&_.line1]:rotate-45 peer-checked:[&_.line1]:translate-y-[7px] 
+                              peer-checked:[&_.line2]:opacity-0
+                              peer-checked:[&_.line3]:-rotate-45 peer-checked:[&_.line3]:-translate-y-[7px]">
+                    <div class="space-y-1.5">
+                        <span class="line1 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                        <span class="line2 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                        <span class="line3 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                    </div>
+                </label>
+
+                <div class="fixed inset-0 bg-black/30 z-10 hidden peer-checked:block backdrop-blur-sm"></div>
+
+                <div class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white shadow-xl p-6 pt-20 z-20
+                            transform translate-x-full transition-transform duration-300 ease-in-out 
+                            peer-checked:translate-x-0">
+                    <nav class="flex flex-col space-y-3">
+                        <a href="index.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base nav-active-custom">Inicio</a>
+                        <a href="nosotros.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Nosotros</a>
+                        <a href="destinos.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Destinos</a>
+                        <a href="servicios.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Servicios</a>
+                        <a href="contacto.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Contacto</a>
+                        <div class="pt-6 mt-6 border-t border-gray-200">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-700">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <button id="mobile-menu-button" aria-label="Abrir menú" aria-expanded="false" class="text-gray-600 hover:text-blue-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
+                
             </div>
-        </nav>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2 absolute w-full">
-            <a href="index.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Inicio</a>
-            <a href="nosotros.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Nosotros</a>
-            <a href="destinos.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Destinos</a>
-            <a href="servicios.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Servicios</a>
-            <a href="contacto.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Contacto</a>
         </div>
     </header>
 

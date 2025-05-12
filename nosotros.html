@@ -11,35 +11,66 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style> body { font-family: 'Inter', sans-serif; } </style>
-    <script src="js/main.js" defer></script>
+
 </head>
 <body class="bg-gray-100 text-gray-800">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700">Viajes Air Plane</a>
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">Viajes Air Plane</a>
 
-            <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-                <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium text-blue-600 font-semibold nav-active">Nosotros</a>
-                <a href="destinos.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Destinos</a>
-                <a href="servicios.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
-                <a href="contacto.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+            <nav class="hidden md:flex space-x-1 lg:space-x-2 items-center">
+                <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 nav-active-custom">Inicio</a>
+                <a href="nosotros.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Nosotros</a>
+                <a href="destinos.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Destinos</a>
+                <a href="servicios.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Servicios</a>
+                <a href="contacto.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Contacto</a>
+                <div class="hidden md:flex items-center space-x-3 ml-4">
+                    <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-700 transition-colors duration-200">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    
+                </div>
+            </nav>
+
+            <div class="md:hidden">
+                <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
+                
+                <label for="mobile-menu-toggle" 
+                       class="z-30 relative p-2 cursor-pointer block
+                              peer-checked:[&_.line1]:rotate-45 peer-checked:[&_.line1]:translate-y-[7px] 
+                              peer-checked:[&_.line2]:opacity-0
+                              peer-checked:[&_.line3]:-rotate-45 peer-checked:[&_.line3]:-translate-y-[7px]">
+                    <div class="space-y-1.5">
+                        <span class="line1 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                        <span class="line2 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                        <span class="line3 block w-6 h-0.5 bg-gray-700 rounded-full transition-all duration-300"></span>
+                    </div>
+                </label>
+
+                <div class="fixed inset-0 bg-black/30 z-10 hidden peer-checked:block backdrop-blur-sm"></div>
+
+                <div class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white shadow-xl p-6 pt-20 z-20
+                            transform translate-x-full transition-transform duration-300 ease-in-out 
+                            peer-checked:translate-x-0">
+                    <nav class="flex flex-col space-y-3">
+                        <a href="index.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base nav-active-custom">Inicio</a>
+                        <a href="nosotros.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Nosotros</a>
+                        <a href="destinos.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Destinos</a>
+                        <a href="servicios.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Servicios</a>
+                        <a href="contacto.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 text-base">Contacto</a>
+                        <div class="pt-6 mt-6 border-t border-gray-200">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-blue-700">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
             </div>
-
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" aria-label="Abrir menú" aria-expanded="false" class="text-gray-600 hover:text-blue-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
-        </nav>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2 absolute w-full">
-            <a href="index.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Inicio</a>
-            <a href="nosotros.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Nosotros</a>
-            <a href="destinos.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Destinos</a>
-            <a href="servicios.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Servicios</a>
-            <a href="contacto.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Contacto</a>
         </div>
     </header>
 
